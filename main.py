@@ -56,9 +56,7 @@ def main() -> None:
     examples_3d = {k: v for k, v in EXAMPLES.items() if v.get("3d")}
 
     for key, ex in examples_3d.items():
-        print(f"\n{'═' * 60}")
-        print(f"  {ex['name']} (3D bonus)")
-        print(f"{'═' * 60}")
+        out_path = os.path.join(args.output_dir, f"{key}.png")
         Lsystem(
             axiom=ex["axiom"],
             rules=ex["rules"],
@@ -67,6 +65,7 @@ def main() -> None:
             name=ex["name"],
             color=ex.get("color", "forestgreen"),
             use_3d=True,
+            save_gif=out_path,
             show=show,
         )
 

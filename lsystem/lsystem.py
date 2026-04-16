@@ -72,8 +72,15 @@ def Lsystem(
         ax = fig.add_subplot(111, projection="3d")
         turtle3d.plot(segs, ax=ax, color=color, linewidth=linewidth)
         ax.set_title(f"{name} — iterácia {iterations}", fontsize=14)
+        if save_gif:
+            # Pre 3D uložíme PNG namiesto GIF
+            png_path = save_gif.rsplit(".", 1)[0] + ".png"
+            fig.savefig(png_path, dpi=100, bbox_inches="tight")
+            print(f"  PNG uložený: {png_path}")
         if show:
             plt.show()
+        else:
+            plt.close(fig)
         return words
 
     # 2D vykreslenie — panely pre každú iteráciu
