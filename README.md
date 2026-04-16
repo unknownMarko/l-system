@@ -69,28 +69,28 @@ Lsystem(
 - **Rules:** `F → F-F++F-F`
 - **Angle:** 60°
 
-![Koch Snowflake](docs/koch_snowflake.gif)
+<img src="docs/koch_snowflake.gif" width="350">
 
 ### Sierpinski Triangle (iteration 6)
 - **Axiom:** `F-G-G`
 - **Rules:** `F → F-G+F+G-F`, `G → GG`
 - **Angle:** 120°
 
-![Sierpinski Triangle](docs/sierpinski_triangle.gif)
+<img src="docs/sierpinski_triangle.gif" width="350">
 
 ### Dragon Curve (iteration 12)
 - **Axiom:** `FX`
 - **Rules:** `X → X+YF+`, `Y → -FX-Y`
 - **Angle:** 90°
 
-![Dragon Curve](docs/dragon_curve.gif)
+<img src="docs/dragon_curve.gif" width="350">
 
 ### Fractal Plant (iteration 6)
 - **Axiom:** `X`
 - **Rules:** `X → F+[[X]-X]-F[-FX]+X`, `F → FF`
 - **Angle:** 25°
 
-![Fractal Plant](docs/fractal_plant.gif)
+<img src="docs/fractal_plant.gif" width="350">
 
 ### Pentagonal Snowflake — custom (iteration 3)
 - **Axiom:** `F+F+F+F+F`
@@ -98,7 +98,7 @@ Lsystem(
 - **Angle:** 72°
 - Koch construction on a regular pentagon instead of a triangle, creating a fractal with pentagonal symmetry.
 
-![Pentagonal Snowflake](docs/pentagonal_snowflake.gif)
+<img src="docs/pentagonal_snowflake.gif" width="350">
 
 ### 3D Tree — bonus (iteration 5)
 - **Axiom:** `A`
@@ -106,7 +106,7 @@ Lsystem(
 - **Angle:** 22.5°
 - Branches extend in four directions using yaw and pitch rotations.
 
-![3D Tree](docs/tree_3d.png)
+<img src="docs/tree_3d.png" width="400">
 
 ## Project Structure
 
